@@ -7,10 +7,28 @@
   pointer-events: none;
 }
 
+.equalWidthButton {
+  display: inline-block;
+  width: 100%;
+}
+
+.equalWidthInnerButton {
+  width: calc(40% - 100px); 
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
+}
+
+.historytable {
+  border: 1px solid black;
+  font-family: 'Times New Roman';
+}
+
+body {
+  background-color: #525556;
 }
 
 .App-header {
@@ -35,4 +53,19 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.dark {
+  color: white;
+}
+
+.dark .ui.celled.table {
+  background-color: #333;
+  color: white; 
+}
+
+.dark .ui.celled.table th {
+  background-color: #555;
+  color: white; 
+
 }
